@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rec_upozillaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="রাজৈর"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_my_location_24"/>
+            <TextView
+                android:id="@+id/rec_locationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="রাজৈর,মাদারীপুর"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_location_on_24"/>
+            <TextView
+                android:id="@+id/rec_shopnameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="টুটুল স্টোর"
+                android:gravity="center"
+
+                android:drawableLeft="@drawable/ic_store_24"/>
+
+            <TextView
+                android:id="@+id/rec_shopOwnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="কাসেম মিয়া"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_user"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_gravity="end|bottom"
+        android:gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="বিস্তারিত"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
