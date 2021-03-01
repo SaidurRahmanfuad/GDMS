@@ -13,4 +13,18 @@
     <color name="white">#FFFFFF</color>
     <color name="colorText">#121010</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override='true'>#3700B3</color>
+    <color name="theme_green_color">#28A745</color>
+    <color name="green_field">#AFEDBD</color>
+    <color name="theme_red_color">#DC3545</color>
+    <color name="red_field">#F1D4D7</color>
+    <color name="card_tint">#F8F8F8</color>
+    <color name="theme_redDark_color">@color/theme_red_color</color>
+    <color name="theme_redDark_color2">#CD2C3B</color>
+    <color name="theme_blue_color">#17A2B8</color>
+    <color name="blue_field">#CBE9ED</color>
+    <color name="theme_orenge_color">#FD8000</color>
+
+
+    <color name="card_bg_color">#EDEDED</color>
+    <color name="purple_200">#FFBB86FC</color>
 </resources>

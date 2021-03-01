@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/activeorder_upozillaId"
+                android:id="@+id/activeorder_zillaId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -27,7 +27,7 @@
                 android:singleLine="true"
                 android:drawableLeft="@drawable/ic_my_location_24"/>
             <TextView
-                android:id="@+id/activeorder_locationId"
+                android:id="@+id/activeorder_upozillaId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -35,21 +35,13 @@
                 android:singleLine="true"
                 android:drawableLeft="@drawable/ic_location_on_24"/>
             <TextView
-                android:id="@+id/rec_shopnameId"
+                android:id="@+id/activeorder_shopnumberId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="টুটুল স্টোর"
+                android:text="61"
                 android:gravity="center"
-
                 android:drawableLeft="@drawable/ic_store_24"/>
 
-            <TextView
-                android:id="@+id/activeorder_shopOwnerId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="কাসেম মিয়া"
-                android:gravity="center"
-                android:drawableLeft="@drawable/ic_user"/>
 
         </LinearLayout>
 
@@ -62,11 +54,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/activeorder_detailsId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:elevation="@dimen/_5sdp"
             android:text="বিস্তারিত"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_bg"
             />
     </RelativeLayout>
 

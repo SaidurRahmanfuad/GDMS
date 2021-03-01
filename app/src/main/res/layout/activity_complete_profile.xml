@@ -1,9 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcome_ui.login.CompleteProfileActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coverCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp"
+        >
+        <ImageView
+            android:id="@+id/driver_profile_storeImgId"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/store"
+            android:scaleType="fitXY"
+            android:contentDescription="TODO" />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driver_profile_imgId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/store"
+                app:civ_border_color="#FFAB00"
+                app:civ_border_width="2dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="coverCard"
+        app:layout_constraintStart_toStartOf="coverCard"
+        app:layout_constraintTop_toBottomOf="@+id/coverCard"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="নাম         :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <EditText
+                    android:id="@+id/driver_profile_nameId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="কালকিনি"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="মোবাইল :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <EditText
+                    android:id="@+id/driver_profile_storeId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+8801793208341"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম তাং :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <EditText
+                    android:id="@+id/driver_profile_dobId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ফুয়াদ স্টোর"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="বয়স       :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <EditText
+                    android:id="@+id/driver_profile_ageId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ফুয়াদ স্টোর"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nidcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="personalinfo"
+        app:layout_constraintStart_toStartOf="personalinfo"
+        app:layout_constraintTop_toBottomOf="@+id/personalinfo"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="এনআইডি:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_nidId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="২৮৬৩৮৯১৮৩৬৮৬"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ড্রাইভিং লাইসেন্স :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_drivingId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6474858475"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="পাসপোর্ট :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_passportId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="656556"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="nidcard"
+        app:layout_constraintStart_toStartOf="nidcard"
+        app:layout_constraintTop_toBottomOf="@+id/nidcard"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="শিক্ষাগত যোগ্যতা :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_eduId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="এস এস সি"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addresscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="studycard"
+        app:layout_constraintStart_toStartOf="studycard"
+        app:layout_constraintTop_toBottomOf="@+id/studycard"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="বর্তমান ঠিকানা :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_presentaddId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="কারোয়ান বাজার"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    android:layout_weight="1.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="স্থায়ী ঠিকানা    :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+                <TextView
+                    android:id="@+id/driver_profile_permanentId"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="এস এস সি"
+                    android:background="@drawable/shape_fpet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/addresscard"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

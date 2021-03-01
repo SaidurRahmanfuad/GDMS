@@ -18,6 +18,7 @@
        app:cardCornerRadius="5dp"
       >
        <ImageView
+           android:id="@+id/driver_profile_storeImgId"
            android:layout_width="match_parent"
            android:layout_height="120dp"
            android:src="@drawable/store"
@@ -31,7 +32,7 @@
            >
 
            <de.hdodenhof.circleimageview.CircleImageView
-               android:id="@+id/profile_image"
+               android:id="@+id/driver_profile_imgId"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:layout_alignParentStart="true"
@@ -75,7 +76,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_upozilaId"
+                    android:id="@+id/driver_profile_nameId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -97,11 +98,11 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_storenameId"
+                    android:id="@+id/driver_profile_storeId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ফুয়াদ স্টোর"
+                    android:text="+8801793208341"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
@@ -119,7 +120,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_storenameId"
+                    android:id="@+id/driver_profile_dobId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -141,7 +142,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_storenameId"
+                    android:id="@+id/driver_profile_ageId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -150,37 +151,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
             </LinearLayout>
-            <LinearLayout
 
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_weight="2.4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="সম্পন্ন :"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorText"/>
-                <TextView
-                    android:id="@+id/rec_history_timeId"
-                    android:layout_weight="2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="12:21"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorText"/>
-                <TextView
-                    android:layout_weight="2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="মিনিট"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorText"/>
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -213,7 +184,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_upozilaId"
+                    android:id="@+id/driver_profile_nidId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -235,11 +206,11 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_storenameId"
+                    android:id="@+id/driver_profile_drivingId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ফুয়াদ স্টোর"
+                    android:text="6474858475"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
@@ -257,11 +228,11 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_storenameId"
+                    android:id="@+id/driver_profile_passportId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ফুয়াদ স্টোর"
+                    android:text="656556"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
@@ -299,7 +270,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_upozilaId"
+                    android:id="@+id/driver_profile_eduId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -342,7 +313,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_upozilaId"
+                    android:id="@+id/driver_profile_presentaddId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -364,7 +335,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorText"/>
                 <TextView
-                    android:id="@+id/rec_history_upozilaId"
+                    android:id="@+id/driver_profile_permanentId"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

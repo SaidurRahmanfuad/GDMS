@@ -83,7 +83,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_upozilaId"
+                        android:id="@+id/orderdetail_orderidId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -108,7 +108,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_storenameId"
+                        android:id="@+id/orderdetail_delernameId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -133,7 +133,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_storenameId"
+                        android:id="@+id/orderdetail_delerstoreId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -181,7 +181,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_timeId"
+                        android:id="@+id/orderdetail_orderitemnameId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
@@ -215,7 +215,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_storenameId"
+                        android:id="@+id/orderdetail_quantityId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -240,7 +240,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_storenameId"
+                        android:id="@+id/orderdetail_priceId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -287,7 +287,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/rec_history_upozilaId"
+                        android:id="@+id/orderdetail_commentbyDriverId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -341,6 +341,7 @@
                     android:orientation="horizontal">
 
                     <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/orderdetail_verifydriverId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="আমার দ্বারা হস্তান্তর হয়েছে"
@@ -357,23 +358,28 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/orderdetail_orderdoneId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_marginRight="@dimen/_5sdp"
                         android:text="সম্পন্ন"
                         android:textColor="@color/colorText"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:background="@color/theme_green_color"/>
 
                     <Button
-
+                        android:id="@+id/orderdetail_ordernotdoneId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_5sdp"
                         android:text="বাতিল"
                         android:textColor="@color/colorText"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:background="@color/theme_red_color"/>
                 </LinearLayout>
 
 
