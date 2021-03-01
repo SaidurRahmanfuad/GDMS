@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".welcome_ui.login.FGPasswordActivity"></activity>
+        <activity android:name=".ui.orderdetail.OrderDetailActivity"></activity>
+        <activity android:name=".welcome_ui.login.FGPasswordActivity" />
         <activity android:name=".welcome_ui.login.CompleteProfileActivity" />
         <activity android:name=".welcome_ui.login.LoginActivity" />
         <activity android:name=".welcome_ui.SplashActivity" />
